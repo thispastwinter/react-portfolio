@@ -1,33 +1,386 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@font-face {
+  font-family: 'Bungee-Shade';
+  src: url('/fonts/Bungee-Shade.otf');
+}
+
+.input {
+  padding: 20px;
+}
+
+.input-lg {
+  height: 40px;
+  width: 100%;
+  padding: 15px 0 15px 0;
+  outline: none;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1.5px solid gray;
+  border-radius: 0;
+  background: transparent;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.input-md {
+  height: 40px;
+  width: 50%;
+  padding: 15px 0 15px 0;
+  outline: none;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1.5px solid gray;
+  border-radius: 0;
+  background: transparent;
+}
+
+.input-sm {
+  height: 40px;
+  width: 25%;
+  padding: 15px 0 15px 0;
+  outline: none;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1.5px solid gray;
+  border-radius: 0;
+  background: transparent;
+}
+
+.input-lg:focus {
+  border-color: #628CC0;
+}
+
+.input-lg::placeholder {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.body-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.sticky {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  z-index: 2;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(117, 117, 117, 0.3);
+}
+
+.modal-content {
+  background-color: gray;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  color: white;
+  border-radius: 3px;
+  border: 2px rgb(100, 100, 100) solid;
+}
+
+#modal-close {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes fadein {
+  from {
+    /* border-color: rgba(158, 158, 158, 0.3); */
+    background-color: none;
+    color: rgb(58, 58, 58);
+    /* border: 2px solid rgb(58, 58, 58); */
+  }
+
+  to {
+    /* border-color: rgb(255, 255, 255); */
+    background-color: rgba(158, 158, 158, 0.3);
+    color: white;
+    /* border: 2px solid white; */
+  }
+}
+
+.button {
+  width: 100%;
+  cursor: pointer;
+}
+
+.is-clickable {
+  cursor: pointer;
+}
+
+.standard-link {
+  text-decoration: none;
+}
+
+.standard-link-alternate {
+  text-decoration: none;
+  color: #628CC0;
+}
+
+.standard-link:hover {
+  color: rgb(172, 169, 169);
+}
+
+.standard-link-alternate:hover {
+  color: rgb(110, 148, 194);
+}
+
+.link:hover {
+  animation: 1s;
+  animation-name: fadein;
+  animation-fill-mode: forwards;
+}
+
+.nav-links {
+  padding: 20px;
+  display: inline;
+  position: relative;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(58, 58, 58);
+  /* border: 2px solid rgb(58, 58, 58);
+  border-radius: 3px; */
+  /* border-bottom: 2px solid transparent; */
+}
+
+.header {
+  background: url(/images/skyline.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  color: white;
+  height: 250px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.divider {
+  border: 2px rgb(58, 58, 58) solid;
+}
+
+.top-margin {
+  margin-top: 20px;
+}
+
+.top-margin-bigger {
+  margin-top: 80px;
+}
+
+.bottom-margin {
+  margin-bottom: 20px;
+}
+
+.bottom-margin-bigger {
+  margin-bottom: 40px;
+}
+
+.important {
+  color: gray;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.important-alternate {
+  color: #628CC0;
+}
+
+.indent-text {
+  text-indent: 35px;
+}
+
+.text-is-strong {
+  font-weight: bold;
+}
+
+.text-is-bigger {
+  font-size: 2em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.border-top {
+  border-top: 4px black solid;
+}
+
+.fa-arrow-circle-right {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.25em;
+}
+
+.fa-times {
+  margin: 10px 25px 0 0;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.no-list-style {
+  list-style: none;
+}
+
+#bio-pic,
+#gallery-img {
+  width: 450px;
+  height: auto;
+}
+
+#hover-img {
+  height: 450px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+/* .contact-img {
+  background: url(../images/contactpic.jpg);
+  background-size: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+#speech-bubble {
+  position: relative;
+  left: 125px;
+  top: -25px;
+  height: 150px;
+  width: 150px;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+#bubble-caption {
+  position: relative;
+  top: 15px;
+  left: 35px;
+  font-size: 10em;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+}
+
+#bubble-text {
+  position: relative;
+  bottom: 140px;
+  left: 20px;
+  color: black;
+  font-family: 'Permanent Marker';
+  font-size: 16px;
+  z-index: 1;
+  text-shadow: none;
+}
+
+#banner-text {
+  line-height: 7rem;
+  font-family: 'Bungee-Shade';
+  font-size: 90px;
+  color: white;
+  z-index: 1;
+}
+
+#mobile-nav-banner {
+  line-height: 5rem;
+  font-family: 'Bungee-Shade';
+  font-size: 50px;
+  color: black;
+}
+
+.centered-text {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.uppercase-text {
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 701px) {
+  .bio-mobile {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .mobile-div {
+    display: none;
   }
+
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .is-desktop {
+    display: none;
+  }
+
+  #banner-text {
+    line-height: 5rem;
+    font-size: 50px;
+  }
+
+  .header {
+    height: 500px;
+  }
+
+  .contact-desktop {
+    height: 450px;
+    width: 100%;
+  }
+
+  .nav-links {
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+  }
+
+  .link:hover {
+    animation: none;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  .mobile-div {
+    display: flex;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  #bio-pic,
+  #gallery-img {
+    width: 100%;
+  }
+
 }
