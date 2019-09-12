@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class NavBar extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         const { array } = this.props;
         return (
@@ -13,7 +10,7 @@ class NavBar extends Component {
                     <Link style={{textDecoration: 'none'}} to={{
                         pathname: `${link.path}`
                     }} >
-                        <a className="nav-links link">{link.name}</a>
+                        <a className="nav-links link" href={link.path}>{link.name}</a>
                     </Link>
                 )}
             </div>

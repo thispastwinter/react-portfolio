@@ -6,9 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 
 class Contact extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <React.Fragment>

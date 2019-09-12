@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import MyButton from '../../Components/buttons';
-import MyInput from '../../Components/inputs';
 import Card from '../../Components/cards';
 
 class About extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <React.Fragment>
