@@ -10,10 +10,7 @@ class Header extends Component {
     render() {
         return (
             <div className="grid-cell-lg header centered-text">
-                <Banner
-                    text="Justin Klaas"
-                    tagline="Simplified design and attention to detail. I'll make sure your next project performs the best it can!"
-                />
+                <Banner text="Justin Klaas"/>
                 <NavBar array={routes} />
             </div>
 

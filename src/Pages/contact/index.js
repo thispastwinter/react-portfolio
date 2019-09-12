@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import MyButton from '../../Components/buttons';
 import MyInput from '../../Components/inputs';
 import Card from '../../Components/cards';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComment } from "@fortawesome/free-solid-svg-icons";
 
 class Contact extends Component {
     constructor(props) {
@@ -13,6 +15,7 @@ class Contact extends Component {
                 {console.log(this.props)}
                 <div className="grid">
                     <Card
+                        hasHeading="true"
                         gridSize="grid-cell-md"
                         heading={this.props.heading}
                         tagline="Drop me a line and let's create something together!"
@@ -33,23 +36,28 @@ class Contact extends Component {
                             type="text"
                             placeholder="Message"
                             id="message" />
-                        <br></br>
-                        <div class="grid is-centered">
+                        <div className="grid is-centered">
                             <MyButton text="Submit"></MyButton>
                         </div>
                     </Card>
-                    <div className="grid-cell-md is-centered contact-img contact-desktop is-desktop">
+                    {/* <Card
+                        gridSize="grid-cell-md is-centered"
+                        imageUrl="/images/profile-img.jpg"
+                    >
+
+                    </Card> */}
+                    <div className="grid-cell-md is-centered contact-img">
                         <div id="speech-bubble">
                             <div id="bubble-caption">
-                                <i className="fas fa-comment"></i>
-                                <div id="bubble-text" className="text-is-strong">Thanks<br></br>for<br></br>considering me!</div>
+                                <FontAwesomeIcon icon={faComment} className="shadow" />
+                                    <div id="bubble-text">Thanks<br></br>for<br></br>considering me!</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </React.Fragment>
-        );
-    }
-}
-
+                );
+            }
+        }
+        
 export default Contact;
