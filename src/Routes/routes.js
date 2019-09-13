@@ -3,11 +3,12 @@ import { Route } from 'react-router-dom';
 import Contact from '../Pages/contact';
 import Portfolio from '../Pages/portfolio';
 import About from '../Pages/about';
+import { CSSTransition } from 'react-transition-group';
 
 const routes = [
     {
         name: 'About',
-        path: '/about',
+        path: '/',
         Component: About,
         heading: 'Who am I?'
     },
@@ -27,9 +28,24 @@ const routes = [
 
 const PublicRoutes = () => {
     return (
-        routes.map(({ path, Component, heading }) =>
-            <Route exact path={path} render={(props) => <Component {...props} heading={heading} />
-            } />)
+        <div>
+            {routes.map(({ path, Component, heading }) => (
+                <Route key={path} exact path={path} >
+                    {({ match, props }) => (
+                        <CSSTransition
+                            in={match != null}
+                            timeout={300}
+                            classNames="page"
+                            unmountOnExit
+                        >
+                            <div className="page">
+                                <Component {...props} heading={heading} />
+                            </div>
+                        </CSSTransition>
+                    )}
+                </Route>
+            ))}
+        </div>
     )
 }
 

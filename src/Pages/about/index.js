@@ -25,10 +25,10 @@ class About extends Component {
                         class="standard-link important underline" href="/portfolio/1">white label</a> site
                         to be utilized by businesses like tattoo parlors. The site
                         has a pre-designed template and uses Google Calender's api for booking.</p>
-                        <p class="indent-text important">I love styling web pages; this page is a
+                        {/* <p class="indent-text important">I love styling web pages; this page is a
                         testament to that. All components including buttons, forms,
                         and the grid itself are my own design.
-                    </p>
+                    </p> */}
                     </Card>
                     <Card
                         gridSize="grid-cell-md is-centered"
