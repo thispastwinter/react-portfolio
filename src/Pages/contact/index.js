@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import MyButton from '../../Components/buttons';
 import MyInput from '../../Components/inputs';
 import Card from '../../Components/cards';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faComment } from "@fortawesome/free-solid-svg-icons";
 
 class Contact extends Component {
     render() {
@@ -37,20 +35,12 @@ class Contact extends Component {
                             <MyButton text="Submit"></MyButton>
                         </div>
                     </Card>
-                    {/* <Card
+                    <Card
                         gridSize="grid-cell-md is-centered"
-                        imageUrl="/images/profile-img.jpg"
+                        imageUrl="/images/contactpic.jpg"
                     >
 
-                    </Card> */}
-                    <div className="grid-cell-md is-centered contact-img is-desktop">
-                        <div className="is-desktop" id="speech-bubble">
-                            <div className="is-desktop" id="bubble-caption">
-                                <FontAwesomeIcon icon={faComment} className="shadow" />
-                                    <div className="is-desktop" id="bubble-text">Thanks<br></br>for<br></br>considering me!</div>
-                            </div>
-                        </div>
-                    </div>
+                    </Card>
                 </div>
             </React.Fragment>
                 );

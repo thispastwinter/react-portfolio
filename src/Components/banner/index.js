@@ -8,7 +8,7 @@ class Banner extends Component {
                     {this.props.text}
                 </div>
                 <div className="grid">
-                    <div className="grid-cell-lg centered-text top-margin is-desktop">
+                    <div className="grid-cell-lg centered-text top-margin tagline">
                         <h3>{this.props.tagline}</h3>
                     </div>
                 </div>
