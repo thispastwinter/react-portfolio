@@ -35,10 +35,10 @@ const PublicRoutes = () => {
                         <CSSTransition
                             in={match != null}
                             timeout={300}
-                            classNames="page"
+                            classNames="fade"
                             unmountOnExit
                         >
-                            <div className="page">
+                            <div className="fade">
                                 <Component {...props} heading={heading} />
                             </div>
                         </CSSTransition>

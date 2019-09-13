@@ -7,7 +7,6 @@ class Contact extends Component {
     render() {
         return (
             <React.Fragment>
-                {console.log(this.props)}
                 <div className="grid">
                     <Card
                         hasHeading="true"
@@ -39,7 +38,6 @@ class Contact extends Component {
                         gridSize="grid-cell-md is-centered"
                         imageUrl="/images/contactpic.jpg"
                     >
-
                     </Card>
                 </div>
             </React.Fragment>
