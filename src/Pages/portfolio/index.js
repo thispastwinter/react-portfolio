@@ -17,7 +17,7 @@ class Portfolio extends Component {
                         >
                             <div>
                                 <br></br>
-                                <p className="important">{description}</p>
+                                <p className="indent-text important bottom-margin">{description}</p>
                             </div>
                         </Card>
                         <Card

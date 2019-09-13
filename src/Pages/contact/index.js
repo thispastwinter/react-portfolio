@@ -43,11 +43,11 @@ class Contact extends Component {
                     >
 
                     </Card> */}
-                    <div className="grid-cell-md is-centered contact-img">
-                        <div id="speech-bubble">
-                            <div id="bubble-caption">
+                    <div className="grid-cell-md is-centered contact-img is-desktop">
+                        <div className="is-desktop" id="speech-bubble">
+                            <div className="is-desktop" id="bubble-caption">
                                 <FontAwesomeIcon icon={faComment} className="shadow" />
-                                    <div id="bubble-text">Thanks<br></br>for<br></br>considering me!</div>
+                                    <div className="is-desktop" id="bubble-text">Thanks<br></br>for<br></br>considering me!</div>
                             </div>
                         </div>
                     </div>
