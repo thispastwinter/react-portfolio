@@ -5,12 +5,12 @@ class NavBar extends Component {
     render() {
         const { array } = this.props;
         return (
-            <div id="navbar" className="grid-cell-lg is-spaced desktop-nav">
-                {array.map(link =>
+            <div className="grid-cell-lg is-spaced desktop-nav">
+                {array.map(({ path, name }) =>
                     <Link style={{textDecoration: 'none'}} to={{
-                        pathname: `${link.path}`
+                        pathname: `${path}`
                     }} >
-                        <a className="nav-links link" href={link.path}>{link.name}</a>
+                        <a className="nav-links link" href={path}>{name}</a>
                     </Link>
                 )}
             </div>
