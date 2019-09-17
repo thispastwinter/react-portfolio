@@ -4,6 +4,7 @@ import './App.css';
 import './Grid.css';
 import Header from './Components/header';
 import { PublicRoutes } from './Routes/routes';
+import { ProjectRoutes } from './Projects';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Router>
         <Header />
         <PublicRoutes />
+        <ProjectRoutes />
       </Router>
     </React.Fragment>
   );
