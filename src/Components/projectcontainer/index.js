@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Card from '../../Components/cards';
+import Card from '../cards';
 
-class ProjectCard extends Component {
+class ProjectContainer extends Component {
     render() {
         return (
             <div>
@@ -30,10 +30,9 @@ class ProjectCard extends Component {
                         >
                         </Card>
                     </div>
-                )}
             </div>
         );
     }
 }
 
-export default ProjectCard;
+export default ProjectContainer;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import ProjectCard from '../Components/projectcard';
+import ProjectContainer from '../Components/projectcontainer';
 import { CSSTransition } from 'react-transition-group';
 
 const projects = [
@@ -46,7 +46,7 @@ const ProjectRoutes = () => {
                             unmountOnExit
                         >
                             <div className="fade">
-                                <ProjectCard {...props} 
+                                <ProjectContainer {...props} 
                                 heading={heading}
                                 deployed={deployed}
                                 description={description}
