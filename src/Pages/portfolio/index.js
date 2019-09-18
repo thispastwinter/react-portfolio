@@ -10,12 +10,7 @@ class Portfolio extends Component {
     }
 
     mouseOver = (image) => {
-        this.setState({ hover: true });
         this.setState({ currentImage: image })
-    }
-
-    mouseOut = () => {
-        this.setState({ hover: false })
     }
 
     render() {
@@ -31,7 +26,7 @@ class Portfolio extends Component {
                     id="contact"
                 >
                     {projects.map(({ path, name, tagline, image }) =>
-                        <Link className="standard-link important" onMouseOver={() => this.mouseOver(image)} onMouseOut={this.mouseOut} style={{ textDecoration: 'none' }} to={{
+                        <Link className="standard-link important" onMouseOver={() => this.mouseOver(image)} style={{ textDecoration: 'none' }} to={{
                             pathname: `${path}`
                         }} >
                             <br></br>
