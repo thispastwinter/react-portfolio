@@ -6,7 +6,7 @@ class About extends Component {
         return (
             <React.Fragment>
                 {console.log(this.props)}
-                <div className="grid">
+                <div className="grid content">
                     <Card
                         hasHeading="true"
                         gridSize="grid-cell-md"

@@ -10,7 +10,10 @@ class NavBar extends Component {
                     <Link style={{textDecoration: 'none'}} to={{
                         pathname: `${path}`
                     }} >
+                        {!this.props.footer ? 
                         <a className="nav-links link" href={path}>{name}</a>
+                        :
+                        <a className="footer-nav" href={path}>{name}</a>}
                     </Link>
                 )}
             </div>

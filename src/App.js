@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import './Grid.css';
 import Header from './Components/header';
+import Footer from './Components/footer';
 import { PublicRoutes } from './Routes/routes';
 import { ProjectRoutes } from './Projects';
 
@@ -13,8 +14,10 @@ function App() {
         <Header />
         <PublicRoutes />
         <ProjectRoutes />
+        <Footer />
       </Router>
     </React.Fragment>
+    
   );
 }
 

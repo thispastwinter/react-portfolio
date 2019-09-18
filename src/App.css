@@ -346,6 +346,28 @@
   text-transform: uppercase;
 }
 
+.footer {
+  display: flex;
+  color: white;
+  flex-shrink: 0;
+  padding: 20px;
+  background-color: rgb(58, 58, 58);
+}
+
+.footer .icons {
+  font-size: 30px;
+}
+
+.footer-nav {
+  text-decoration: none;
+  color: white;
+}
+
+.copyright {
+  color: rgb(117, 117, 117);
+  font-size: 14px;
+}
+
 @media only screen and (min-width: 701px) {
   .bio-mobile {
     display: none;
@@ -413,7 +435,7 @@
   }
 
   .footer {
-    display: none;
+    padding: 20px;
   }
 
   #bio-pic,

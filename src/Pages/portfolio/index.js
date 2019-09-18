@@ -17,7 +17,7 @@ class Portfolio extends Component {
        const { currentImage } = this.state;
         return (
 
-            <div className="grid">
+            <div className="grid content">
                 <Card
                     hasHeading="true"
                     gridSize="grid-cell-md"

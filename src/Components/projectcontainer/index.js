@@ -5,7 +5,7 @@ class ProjectContainer extends Component {
     render() {
         return (
             <div>
-                    <div className="grid">
+                    <div className="grid content">
                         <Card
                             hasHeading="true"
                             gridSize="grid-cell-md"

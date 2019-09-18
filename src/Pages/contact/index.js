@@ -6,7 +6,7 @@ class Contact extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="grid">
+                <div className="grid content">
                     <ContactForm heading={this.props.heading} />
                     <Card
                         gridSize="grid-cell-md is-centered"
