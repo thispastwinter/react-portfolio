@@ -13,7 +13,7 @@ class NavBar extends Component {
                         {!this.props.footer ? 
                         <a className="nav-links link" href={path}>{name}</a>
                         :
-                        <a className="footer-nav" href={path}>{name}</a>}
+                        <a className="footer-nav standard-link" href={path}>{name}</a>}
                     </Link>
                 )}
             </div>

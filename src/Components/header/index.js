@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from '../navigation';
 import Banner from '../banner';
+import './index.css';
 import { routes } from '../../Routes/routes'
 
 class Header extends Component {

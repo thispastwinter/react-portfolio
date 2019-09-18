@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Hepta+Slab&display=swap');
+
 @font-face {
   font-family: 'Bungee-Shade';
   src: url('/fonts/Bungee-Shade.otf');
@@ -13,7 +14,7 @@
 
 .fade-enter-active {
   opacity: 1;
-  transition: opacity 200ms;
+  transition: opacity 300ms;
 }
 
 .fade-exit {
@@ -22,125 +23,18 @@
 
 .fade-exit-active {
   opacity: 0;
-  transition: opacity 200ms;
-}
-
-
-.input {
-  padding: 20px 0 20px 0;
-}
-
-.input-lg {
-  height: 40px;
-  width: 100%;
-  padding: 15px 0 15px 0;
-  outline: none;
-  border-top: 0px;
-  border-right: 0px;
-  border-left: 0px;
-  border-bottom: 1.5px solid gray;
-  border-radius: 0;
-  background: transparent;
-  font-family: 'Roboto';
-  font-size: 14px;
-}
-
-.input-md {
-  height: 40px;
-  width: 50%;
-  padding: 15px 0 15px 0;
-  outline: none;
-  border-top: 0px;
-  border-right: 0px;
-  border-left: 0px;
-  border-bottom: 1.5px solid gray;
-  border-radius: 0;
-  background: transparent;
-}
-
-.input-sm {
-  height: 40px;
-  width: 25%;
-  padding: 15px 0 15px 0;
-  outline: none;
-  border-top: 0px;
-  border-right: 0px;
-  border-left: 0px;
-  border-bottom: 1.5px solid gray;
-  border-radius: 0;
-  background: transparent;
-}
-
-.input-lg:focus {
-  border-color: #628CC0;
-}
-
-.input-lg::placeholder {
-  font-family: 'Roboto';
-  text-transform: uppercase;
-  text-align: left;
-}
-
-.body-wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.sticky {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  align-items: center;
-  z-index: 2;
-}
-
-#modal {
-  display: none;
-  position: fixed;
-  z-index: 3;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(117, 117, 117, 0.3);
-}
-
-.modal-content {
-  background-color: gray;
-  margin: 15% auto;
-  padding: 20px;
-  width: 80%;
-  color: white;
-  border-radius: 3px;
-  border: 2px rgb(100, 100, 100) solid;
-}
-
-#modal-close {
-  display: flex;
-  justify-content: flex-end;
+  transition: opacity 300ms;
 }
 
 @keyframes fadein {
   from {
-    /* border-color: rgba(158, 158, 158, 0.3); */
     background-color: none;
     color: rgb(58, 58, 58);
-    /* border: 2px solid rgb(58, 58, 58); */
   }
 
   to {
-    /* border-color: rgb(255, 255, 255); */
-    /* background-color: rgba(158, 158, 158, 0.3); */
     color: white;
-    /* border: 2px solid white; */
   }
-}
-
-.button {
-  width: 100%;
-  cursor: pointer;
 }
 
 .is-clickable {
@@ -178,19 +72,6 @@
   text-transform: uppercase;
   text-decoration: none;
   color: rgb(58, 58, 58);
-  /* border: 2px solid rgb(58, 58, 58);
-  border-radius: 3px; */
-  /* border-bottom: 2px solid transparent; */
-}
-
-.header {
-  background: url(/images/skyline.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  color: white;
-  height: 265px;
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
 }
 
 .divider {
@@ -225,6 +106,14 @@
   color: #628CC0;
 }
 
+.centered-text {
+  text-align: center;
+}
+
+.uppercase-text {
+  text-transform: uppercase;
+}
+
 .indent-text {
   text-indent: 35px;
 }
@@ -237,38 +126,22 @@
   font-size: 2em;
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
 .border-top {
   border-top: 4px black solid;
-}
-
-.fa-arrow-circle-right {
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 1.25em;
-}
-
-.fa-times {
-  margin: 10px 25px 0 0;
-  font-size: 1.5em;
-  cursor: pointer;
 }
 
 .no-list-style {
   list-style: none;
 }
 
+.tag {
+  font-size: 18px;
+}
+
 #bio-pic,
 #gallery-img {
   width: 450px;
   height: auto;
-}
-
-#hover-img {
-  height: 450px;
 }
 
 .is-hidden {
@@ -280,92 +153,6 @@
   background-size: 450px;
   background-repeat: no-repeat;
   background-position: center;
- }
-
-#speech-bubble {
-  position: relative;
-  left: 125px;
-  top: -25px;
-  height: 150px;
-  width: 150px;
-  background-size: 200px;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
-#bubble-caption {
-  position: relative;
-  top: 15px;
-  left: 35px;
-  font-size: 10em;
-  color: white;
-  text-shadow: 2px 2px 8px black;
-}
-
-.shadow {
-  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-  filter: drop-shadow( 1px 1px 10px rgba(0, 0, 0, .7));
-  /* Similar syntax to box-shadow */
-}
-
-#bubble-text {
-  position: relative;
-  bottom: 140px;
-  left: 18px;
-  color: black;
-  font-family: 'Roboto';
-  font-size: 18px;
-  z-index: 1;
-  text-shadow: none;
-}
-
-#banner-text {
-  line-height: 8rem;
-  font-family: 'Abril Fatface';
-  font-size: 100px;
-  color: white;
-  z-index: 1;
-}
-
-.tag {
-  font-size: 18px;
-}
-
-#mobile-nav-banner {
-  line-height: 5rem;
-  font-family: 'Bungee-Shade';
-  font-size: 50px;
-  color: black;
-}
-
-.centered-text {
-  text-align: center;
-}
-
-.uppercase-text {
-  text-transform: uppercase;
-}
-
-.footer {
-  display: flex;
-  color: white;
-  flex-shrink: 0;
-  padding: 20px;
-  background-color: rgb(58, 58, 58);
-}
-
-.footer .icons {
-  font-size: 30px;
-}
-
-.footer-nav {
-  text-decoration: none;
-  color: white;
-}
-
-.copyright {
-  color: rgb(117, 117, 117);
-  font-size: 14px;
 }
 
 @media only screen and (min-width: 701px) {
@@ -388,27 +175,8 @@
     width: 100%;
   }
 
-  .tagline {
-    line-height: 1rem;
-    font-size: 15px;
-  }
-
   .is-desktop {
     display: none;
-  }
-
-  #banner-text {
-    line-height: 4rem;
-    font-size: 50px;
-  }
-
-  .header {
-    height: 185px;
-  }
-
-  .contact-img {
-   display: none;
-   visibility: hidden;
   }
 
   .nav-links {
@@ -442,5 +210,4 @@
   #gallery-img {
     width: 100%;
   }
-
 }

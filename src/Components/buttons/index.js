@@ -5,7 +5,7 @@ class MyButton extends Component {
   render() {
     return (
       <button
-        className={this.props.primary ? 'mybutton' : 'mybutton-secondary'}
+        className="is-clickable"
         onClick={this.props.static ? undefined : this.props.onClick}
         disabled={this.props.disabled}>
         {this.props.text}

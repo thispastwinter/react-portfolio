@@ -1,0 +1,7 @@
+#banner-text {
+    line-height: 8rem;
+    font-family: 'Abril Fatface';
+    font-size: 100px;
+    color: white;
+    z-index: 1;
+}
