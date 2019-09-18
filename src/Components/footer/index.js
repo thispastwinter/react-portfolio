@@ -7,17 +7,17 @@ import { routes } from '../../Routes/routes';
 class Footer extends Component {
     render() {
         return (
-            <div className="footer">
-                <div className="is-centered">
+            <div>
+                <div className="footer is-centered">
                 <NavBar array={routes} footer="true" />
                 </div>
-                <div className="is-centered">
+                <div className="footer is-centered">
                     <div className="grid-cell-sm is-spaced icons">
                         <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                         <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
                     </div>
                 </div>
-                <div className="is-centered copyright">
+                <div className="footer is-centered copyright">
                 Copyright 2019 Justin Klaas
                 </div>
             </div>
