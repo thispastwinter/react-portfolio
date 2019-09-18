@@ -10,7 +10,7 @@ const routes = [
         name: 'About',
         path: '/',
         Component: About,
-        heading: 'Who am I?'
+        heading: 'About'
     },
     {
         name: 'Portfolio',

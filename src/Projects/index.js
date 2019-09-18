@@ -36,7 +36,7 @@ const projects = [
 const ProjectRoutes = () => {
     return (
         <div>
-            {projects.map(({ path, heading, deployed, description, name, github, image }) => (
+            {projects.map(({ path, tagline, deployed, description, name, github, image }) => (
                 <Route key={path} exact path={path} >
                     {({ match, props }) => (
                         <CSSTransition
@@ -47,7 +47,7 @@ const ProjectRoutes = () => {
                         >
                             <div className="fade">
                                 <ProjectContainer {...props} 
-                                heading={heading}
+                                tagline={tagline}
                                 deployed={deployed}
                                 description={description}
                                 name={name}
