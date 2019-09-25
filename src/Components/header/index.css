@@ -2,12 +2,25 @@
     background: url(/images/skyline.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position-y: -34rem;
     color: white;
     height: 500px;
 }
 
-@media only (max-width: 700px) {
+@media only screen 
+    and (max-width: 1500px)
+    and (min-width: 701px) {
+    .header {
+        background: url(/images/skyline.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        color: white;
+        height: 500px;
+    }   
+}
+
+@media only screen and (max-width: 700px) {
     .tagline {
         line-height: 1rem;
         font-size: 15px;
