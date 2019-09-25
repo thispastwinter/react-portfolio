@@ -10,7 +10,7 @@ class Footer extends Component {
         return (
             <div>
                 <div className="footer is-centered">
-                    <NavBar array={routes} footer="true" />
+                    <NavBar array={routes} footer />
                 </div>
                 <div className="footer is-centered">
                     <div className="grid-cell-sm is-spaced icons">

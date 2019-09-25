@@ -34,7 +34,7 @@ const PublicRoutes = () => {
                     {({ match, props }) => (
                         <CSSTransition
                             in={match != null}
-                            timeout={100}
+                            timeout={300}
                             classNames="fade"
                             unmountOnExit
                         >

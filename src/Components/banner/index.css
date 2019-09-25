@@ -4,4 +4,16 @@
     font-size: 100px;
     color: white;
     z-index: 1;
+    animation: 2s;
+    animation-name: slidein;
 }
+
+/* @keyframes slidein {
+    from {
+      po: 50px;
+    }
+  
+    to {
+      font-size: 100px;
+    }
+  } */
