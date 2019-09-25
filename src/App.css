@@ -66,8 +66,7 @@
 
 .nav-links {
   padding: 20px;
-  display: inline;
-  position: relative;
+  display: flex;
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
@@ -134,8 +133,8 @@
   list-style: none;
 }
 
-.tag {
-  font-size: 18px;
+.tagline {
+  font-size: 24px;
 }
 
 #bio-pic,
