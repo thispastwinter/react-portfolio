@@ -22,11 +22,11 @@ class About extends Component {
                         tagline="A front-end developer ready to make your vision come to life."
                         id="about"
                     >
-                        <p class="indent-text important bottom-margin top-margin">
+                        <p class="important bottom-margin top-margin">
                             I am a full-stack developer ready to make your vision come to life. I have always had a passion for creating
                             things. Traditionally that's shown itself in my music and other artistic endeavors, but I have also found
                             ways to implement creativity into my life as a programmer.</p>
-                        <p class="indent-text important">
+                        <p class="important">
                             My current projects intersect my current passions. Presently I'm building an app that will <a
                             className="standard-link important underline" href="/portfolio/2">help bars convert single serving
                             cocktails into larger batches</a>. Most recently I worked on a group project where we built a <a

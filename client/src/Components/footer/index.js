@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NavBar from '../../Components/navigation';
+import NavBar from '../navigation';
 import './index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';

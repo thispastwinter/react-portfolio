@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Card from '../../Components/cards';
 import { Link } from 'react-router-dom';
-import { projects } from '../../Projects/';
+import { projects } from '../../Projects';
 
 class Portfolio extends Component {
     state = {
@@ -30,8 +30,8 @@ class Portfolio extends Component {
                             pathname: `${path}`
                         }} >
                             <br></br>
-                            <h3 data={image} className="is-centered" href={path}>{name}</h3>
-                            <p className="centered-text">{tagline}</p>
+                            <h3 data={image} href={path}>{name}</h3>
+                            <p>{tagline}</p>
                         </Link>
                     )}
                 </Card>

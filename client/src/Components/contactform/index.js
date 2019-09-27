@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Card from '../cards/';
+import Card from '../cards';
 import MyInput from '../inputs';
 import MyButton from '../buttons';
 
